@@ -1,0 +1,124 @@
+{
+  "title": "WorksCard",
+  "anatomy": {
+    "root": {
+      "type": "container"
+    },
+    "frame17": {
+      "type": "container"
+    },
+    "projectTitle": {
+      "type": "text"
+    },
+    "projectCategories": {
+      "type": "text"
+    },
+    "button": {
+      "type": "instance",
+      "instanceOf": "Button"
+    }
+  },
+  "props": {},
+  "default": {
+    "name": "WorksCard",
+    "elements": {
+      "root": {
+        "type": "component",
+        "children": [
+          "frame17"
+        ],
+        "styles": {
+          "fills": "{accent2}",
+          "cornerRadius": 20,
+          "height": 595,
+          "width": 1360,
+          "strokeWeight": 1,
+          "layoutMode": "GRID",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "MIN",
+          "gap": 10,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "padding": 20
+        }
+      },
+      "frame17": {
+        "type": "frame",
+        "parent": "root",
+        "children": [
+          "projectTitle",
+          "projectCategories",
+          "button"
+        ],
+        "styles": {
+          "cornerRadius": 16,
+          "height": 555,
+          "width": 1320,
+          "strokeWeight": 1,
+          "layoutMode": "GRID",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "MIN",
+          "gap": -1,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "FILL",
+          "padding": {
+            "vertical": 15,
+            "horizontal": 23
+          }
+        }
+      },
+      "projectTitle": {
+        "type": "text",
+        "parent": "frame17",
+        "styles": {
+          "fills": "{white}",
+          "height": 62,
+          "width": 1274,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "h1"
+        },
+        "characters": "Project Title"
+      },
+      "projectCategories": {
+        "type": "text",
+        "parent": "frame17",
+        "styles": {
+          "fills": "{white}",
+          "height": 21,
+          "width": 1274,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "text"
+        },
+        "characters": "Project Categories"
+      },
+      "button": {
+        "type": "instance",
+        "parent": "frame17",
+        "children": [
+          "rectangle16",
+          "more"
+        ],
+        "styles": {
+          "height": 46,
+          "width": 123,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        },
+        "propConfigurations": {
+          "property1": "Default"
+        }
+      }
+    }
+  },
+  "references": [
+    {
+      "name": "Button",
+      "nodeId": "2045:231"
+    }
+  ]
+}

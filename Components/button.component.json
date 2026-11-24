@@ -1,0 +1,90 @@
+{
+  "title": "Button",
+  "anatomy": {
+    "root": {
+      "type": "container"
+    },
+    "more": {
+      "type": "text"
+    }
+  },
+  "props": {
+    "property1": {
+      "type": "string",
+      "default": "Default",
+      "enum": [
+        "Default",
+        "Hover",
+        "Pres"
+      ]
+    }
+  },
+  "default": {
+    "name": "Property 1=Default",
+    "elements": {
+      "root": {
+        "type": "component",
+        "children": [
+          "rectangle16",
+          "more"
+        ],
+        "styles": {
+          "height": 46,
+          "width": 123,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      "rectangle16": {
+        "type": "rectangle",
+        "parent": "root",
+        "styles": {
+          "fills": "#6ca38c",
+          "cornerRadius": 44,
+          "height": 46,
+          "width": 123,
+          "strokeWeight": 7,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        }
+      },
+      "more": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "#ffffff",
+          "height": 34,
+          "width": 122,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        },
+        "characters": "MORE..."
+      }
+    }
+  },
+  "variants": [
+    {
+      "name": "Property 1=Pres",
+      "configuration": {
+        "property1": "Pres"
+      },
+      "elements": {}
+    },
+    {
+      "name": "Property 1=Hover",
+      "configuration": {
+        "property1": "Hover"
+      },
+      "elements": {
+        "rectangle16": {
+          "styles": {
+            "fills": "{secondary}"
+          }
+        }
+      }
+    }
+  ],
+  "invalidConfigurations": []
+}

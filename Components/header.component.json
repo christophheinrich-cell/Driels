@@ -1,0 +1,124 @@
+{
+  "title": "Header",
+  "anatomy": {
+    "root": {
+      "type": "container"
+    },
+    "driels": {
+      "type": "text"
+    },
+    "work": {
+      "type": "text"
+    },
+    "services": {
+      "type": "text"
+    },
+    "contact": {
+      "type": "text"
+    },
+    "studio": {
+      "type": "text"
+    }
+  },
+  "props": {},
+  "default": {
+    "name": "Header",
+    "elements": {
+      "root": {
+        "type": "component",
+        "children": [
+          "driels",
+          "work",
+          "services",
+          "contact",
+          "studio"
+        ],
+        "styles": {
+          "height": 80,
+          "width": 1440,
+          "strokeWeight": 1,
+          "layoutMode": "HORIZONTAL",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "gap": 10,
+          "counterAxisGap": 10,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "padding": {
+            "vertical": 10,
+            "horizontal": 0
+          }
+        }
+      },
+      "driels": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "{accent}",
+          "height": 43,
+          "width": 1135,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED"
+        },
+        "characters": "*DRIELS"
+      },
+      "work": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "{accent}",
+          "height": 18,
+          "width": 36,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "h3"
+        },
+        "characters": "Work"
+      },
+      "services": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "{accent}",
+          "height": 18,
+          "width": 55,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "h3"
+        },
+        "characters": "Services"
+      },
+      "contact": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "{accent}",
+          "height": 18,
+          "width": 52,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "h3"
+        },
+        "characters": "Contact"
+      },
+      "studio": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "{accent}",
+          "height": 18,
+          "width": 43,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "h3"
+        },
+        "characters": "STudio"
+      }
+    }
+  }
+}

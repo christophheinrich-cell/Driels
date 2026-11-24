@@ -1,0 +1,96 @@
+{
+  "title": "WorksMenuCard",
+  "anatomy": {
+    "root": {
+      "type": "container"
+    },
+    "month,Year": {
+      "type": "text"
+    },
+    "projectTitle": {
+      "type": "text"
+    }
+  },
+  "props": {},
+  "default": {
+    "name": "WorksMenuCard",
+    "elements": {
+      "root": {
+        "type": "component",
+        "children": [
+          "month,Year",
+          "projectTitle",
+          "rectangle10",
+          "line2"
+        ],
+        "styles": {
+          "height": 342,
+          "width": 1439,
+          "strokeWeight": 1,
+          "layoutMode": "GRID",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "MIN",
+          "gap": 10,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "HUG",
+          "padding": {
+            "vertical": 9,
+            "horizontal": 40
+          }
+        }
+      },
+      "month,Year": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "#ffffff",
+          "height": 18,
+          "width": 200,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "h3"
+        },
+        "characters": "Month, Year"
+      },
+      "projectTitle": {
+        "type": "text",
+        "parent": "root",
+        "styles": {
+          "fills": "#ffffff",
+          "height": 22,
+          "width": 700,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "HUG",
+          "textStyleId": "h2"
+        },
+        "characters": "Project Title"
+      },
+      "rectangle10": {
+        "type": "rectangle",
+        "parent": "root",
+        "styles": {
+          "cornerRadius": 10,
+          "height": 300,
+          "width": 439,
+          "strokeWeight": 1,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "FILL"
+        }
+      },
+      "line2": {
+        "type": "line",
+        "parent": "root",
+        "styles": {
+          "height": 0,
+          "width": 1359,
+          "strokes": "#ffffff",
+          "strokeWeight": 3,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "FIXED"
+        }
+      }
+    }
+  }
+}

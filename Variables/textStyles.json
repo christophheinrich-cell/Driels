@@ -1,0 +1,60 @@
+{
+  "fileName": "PPD.3.EVAL — Studio Template (Copy)",
+  "textStyles": [
+    {
+      "name": "h3",
+      "fontFamily": "Cuprum",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "display",
+      "fontFamily": "Cal Sans",
+      "fontWeight": "Regular",
+      "fontSize": 250,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "h1",
+      "fontFamily": "Cal Sans",
+      "fontWeight": "Regular",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Cuprum",
+      "fontWeight": "Regular",
+      "fontSize": 32,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER"
+    },
+    {
+      "name": "text",
+      "fontFamily": "Cutive",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "LOWER"
+    }
+  ]
+}

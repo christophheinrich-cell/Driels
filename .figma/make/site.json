@@ -1,0 +1,10 @@
+{
+  "description": "Driels is a creative design studio specialising in websites, branding and visual identity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

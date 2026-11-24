@@ -1,0 +1,12 @@
+{
+  "name": "Design Tokens",
+  "collections": {
+    "Variable collection": {
+      "modes": {
+        "Mode 1": [
+          "variableCollection.json"
+        ]
+      }
+    }
+  }
+}
