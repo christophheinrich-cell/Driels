@@ -49,7 +49,7 @@ img { display: block; max-width: 100%; }
 .nav { display: flex; gap: .75rem; }
 .nav a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .2em; }
 .nav a.active { text-decoration-color: var(--accent); }
-.nav a:hover, .nav a:focus-visible { color: var(--accent-2); text-decoration-color: var(--accent-2); }
+.nav a:hover, .nav a:focus-visible { color: var(--secondary); text-decoration-color: var(--secondary); }
 .menu-button { display: none; border: 0; background: transparent; color: var(--accent); }
 .menu-button span { display: block; width: 2rem; height: .125rem; margin: .5rem; background: currentColor; }
 
@@ -164,11 +164,11 @@ img { display: block; max-width: 100%; }
 .footer-nav { display: flex; flex-direction: column; align-self: end; color: var(--primary); font-family: var(--font-display); font-size: var(--fs-h1); }
 .footer-wordmark, .footer-nav a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .15em; }
 .footer-wordmark:hover, .footer-wordmark:focus-visible, .footer-nav a:hover, .footer-nav a:focus-visible {
-  color: var(--accent-2); text-decoration-color: var(--accent-2);
+  color: var(--secondary); text-decoration-color: var(--secondary);
 }
 .socials { display: flex; flex-direction: column; align-items: flex-end; justify-content: end; color: var(--primary); font-family: var(--font-heading); font-size: var(--fs-h2); }
 .socials a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .15em; }
-.socials a:hover, .socials a:focus-visible { color: var(--accent-2); text-decoration-color: var(--accent-2); }
+.socials a:hover, .socials a:focus-visible { color: var(--secondary); text-decoration-color: var(--secondary); }
 .not-found { min-height: 50vh; text-align: center; }
 .not-found > a { font-family: var(--font-heading); font-size: var(--fs-h2); color: var(--accent); }
 
