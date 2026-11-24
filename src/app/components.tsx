@@ -1,5 +1,31 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router";
+import { projects } from "./data";
+
+const siteUrl = "https://drielsstudio.com";
+
+const pageMetadata: Record<string, { title: string; description: string }> = {
+  "/": {
+    title: "Home",
+    description: "Driels is a creative studio creating distinctive brands, digital experiences, photography and films.",
+  },
+  "/work": {
+    title: "Work",
+    description: "Explore selected branding, editorial design and web development projects by Driels.",
+  },
+  "/services": {
+    title: "Services",
+    description: "Discover Driels services across branding, web development, photography and videography.",
+  },
+  "/studio": {
+    title: "Studio",
+    description: "Meet the creative team behind Driels and learn about our approach to design, strategy and visual storytelling.",
+  },
+  "/contact": {
+    title: "Contact",
+    description: "Contact Driels to discuss your next branding, web, photography or videography project.",
+  },
+};
 
 const navItems = [
   ["Home", "/"],
@@ -96,9 +122,39 @@ function InternalLinkScrollReset() {
   return null;
 }
 
+function RouteMetadata() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const normalizedPath = pathname !== "/" ? pathname.replace(/\/+$/, "") : pathname;
+    const projectSlug = normalizedPath.match(/^\/work\/([^/]+)$/)?.[1];
+    const project = projects.find(({ slug }) => slug === projectSlug);
+    const metadata = project
+      ? {
+          title: project.title,
+          description: project.overview,
+        }
+      : pageMetadata[normalizedPath] ?? {
+          title: "Not Found",
+          description: "The page you requested could not be found.",
+        };
+    const fullTitle = `${metadata.title} — Driels`;
+    const canonicalUrl = `${siteUrl}${normalizedPath === "/" ? "/" : normalizedPath}`;
+
+    document.title = fullTitle;
+    document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute("content", metadata.description);
+    document.querySelector<HTMLMetaElement>('meta[property="og:title"]')?.setAttribute("content", fullTitle);
+    document.querySelector<HTMLMetaElement>('meta[property="og:description"]')?.setAttribute("content", metadata.description);
+    document.querySelector<HTMLMetaElement>('meta[property="og:url"]')?.setAttribute("content", canonicalUrl);
+  }, [pathname]);
+
+  return null;
+}
+
 export function Layout() {
   return (
     <>
+      <RouteMetadata />
       <InternalLinkScrollReset />
       <a className="skip-link" href="#main">Skip to content</a>
       <Header />
