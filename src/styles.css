@@ -120,7 +120,6 @@ img { display: block; max-width: 100%; }
 .copy-block p { margin: 0; white-space: pre-line; font-family: var(--font-text); font-size: var(--fs-h3); line-height: 1.25; }
 .project-gallery { display: grid; gap: 2.5rem; max-width: 73.25rem; margin: 0 auto; padding: 0 1.5rem 2.5rem; }
 .project-gallery img { width: 100%; aspect-ratio: 1172 / 659; object-fit: cover; border-radius: .625rem; }
-.outcome { margin: 0 3.6rem 2.5rem; }
 
 .services-list { display: grid; gap: .625rem; padding: 1.25rem 2.5rem; }
 .service-card {
@@ -198,7 +197,6 @@ img { display: block; max-width: 100%; }
   .copy-block, .copy-block.reverse { grid-template-columns: 1fr; margin: 0; text-align: left; }
   .copy-block.reverse h2, .copy-block.reverse p { grid-column: 1; grid-row: auto; }
   .project-gallery { gap: 1rem; padding: 0 1rem 1rem; }
-  .outcome { margin: 1rem; }
   .services-list { padding: 1rem; }
   .service-card, .service-card.alternate { grid-template-columns: 1fr; text-align: left; }
   .service-card.alternate img, .service-card.alternate div { grid-column: 1; grid-row: auto; text-align: left; }

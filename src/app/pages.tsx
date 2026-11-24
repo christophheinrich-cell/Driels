@@ -108,13 +108,9 @@ export function ProjectPage() {
       <div className="project-gallery">
         {project.images.map((image, index) => <img key={image} src={image} alt={`${project.title} project view ${index + 1}`} />)}
       </div>
-      {project.slug === "bells-and-basil" ? (
-        <section className="project-copy" style={{ paddingTop: 0 }}>
-          <article className="copy-block reverse"><h2>Outcome</h2><p>{project.outcome}</p></article>
-        </section>
-      ) : (
-        <article className="copy-block reverse outcome"><h2>Outcome</h2><p>{project.outcome}</p></article>
-      )}
+      <section className="project-copy" style={{ paddingTop: 0 }}>
+        <article className="copy-block reverse"><h2>Outcome</h2><p>{project.outcome}</p></article>
+      </section>
     </>
   );
 }
